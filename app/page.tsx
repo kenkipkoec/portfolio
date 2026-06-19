@@ -207,10 +207,10 @@ export default function Home() {
                 </div>
               </div>
               <div className="resume-actions">
-                <a href="/Ken Kipkoech Ngetich (kenaki).pdf" download className="btn btn-primary">
+                <a href="/Ken%20Kipkoech%20Ngetich%20(kenaki).pdf" download="Ken Kipkoech Ngetich (kenaki).pdf" className="btn btn-primary">
                   Download CV
                 </a>
-                <a href="/Ken Kipkoech Ngetich (kenaki).pdf" target="_blank" rel="noreferrer" className="btn btn-secondary">
+                <a href="/Ken%20Kipkoech%20Ngetich%20(kenaki).pdf" target="_blank" rel="noreferrer" className="btn btn-secondary">
                   View Online
                 </a>
               </div>
