@@ -255,6 +255,7 @@ export default function Home() {
 
       <footer className="site-footer">
         <p>Handcrafted with care • Built with Next.js • Always learning</p>
+        <p className="copyright">© 2026 All rights reserved • Ngetich Ken</p>
       </footer>
     </main>
   );
