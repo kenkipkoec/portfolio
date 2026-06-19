@@ -57,6 +57,7 @@ export default function Home() {
             <Link href="#about">About</Link>
             <Link href="#skills">Skills</Link>
             <Link href="#projects">Projects</Link>
+            <Link href="#architecture">Architecture</Link>
             <Link href="#contact">Contact</Link>
             <Link href="#resume">Resume</Link>
           </nav>
@@ -82,8 +83,8 @@ export default function Home() {
               <Link className="button button-primary" href="#contact">
                 Get in Touch
               </Link>
-              <Link className="button button-secondary" href="/resume.pdf">
-                Download Resume
+              <Link className="button button-secondary" href="#resume">
+                Check my Resume
               </Link>
             </div>
           </div>
@@ -163,6 +164,65 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section architecture-section" id="architecture">
+        <div className="section-head">
+          <h2>My Approach & Architecture</h2>
+          <p>How I design and build scalable, maintainable solutions</p>
+        </div>
+        <div className="architecture-grid">
+          <article className="arch-card">
+            <h3>🏗️ Clean Architecture</h3>
+            <p>I follow industry best practices with separation of concerns, modular design, and clear dependencies. Every layer serves a purpose, making code easier to test, maintain, and scale.</p>
+          </article>
+          <article className="arch-card">
+            <h3>⚡ Performance First</h3>
+            <p>Optimization is built in from the start. Efficient algorithms, caching strategies, lazy loading, and minimal bundle sizes ensure fast load times and smooth user experiences.</p>
+          </article>
+          <article className="arch-card">
+            <h3>🔒 Security by Design</h3>
+            <p>Authentication, authorization, data validation, and protection against common vulnerabilities are integrated throughout. User data security is non-negotiable.</p>
+          </article>
+          <article className="arch-card">
+            <h3>🧪 Test-Driven Development</h3>
+            <p>Comprehensive test coverage ensures reliability. Unit tests, integration tests, and end-to-end tests catch issues early and give confidence in deployments.</p>
+          </article>
+          <article className="arch-card">
+            <h3>📱 Responsive & Accessible</h3>
+            <p>Every product works beautifully on all devices. Accessibility standards ensure inclusive design that works for everyone, regardless of their abilities.</p>
+          </article>
+          <article className="arch-card">
+            <h3>🔄 Continuous Improvement</h3>
+            <p>Monitoring, logging, and analytics guide decisions. Feedback loops help me iterate quickly, fix issues, and continuously improve the product.</p>
+          </article>
+        </div>
+      </section>
+
+      <section className="section resume-section" id="resume">
+        <div className="section-grid">
+          <div>
+            <h2>Resume / CV</h2>
+            <p>Download my detailed resume to learn more about my experience, education, and qualifications.</p>
+            <div className="resume-card">
+              <div className="resume-preview">
+                <div className="pdf-icon">📄</div>
+                <div className="resume-info">
+                  <h3>Ken Kipkoech Ngetich</h3>
+                  <p>Full-Stack Developer & Software Engineer</p>
+                </div>
+              </div>
+              <div className="resume-actions">
+                <a href="/Ken%20Kipkoech%20Ngetich%20(kenaki).pdf" download="Ken Kipkoech Ngetich (kenaki).pdf" className="btn btn-primary">
+                  Download CV
+                </a>
+                <a href="/Ken%20Kipkoech%20Ngetich%20(kenaki).pdf" target="_blank" rel="noreferrer" className="btn btn-secondary">
+                  View Online
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="section contact-section" id="contact">
         <div className="section-grid contact-grid">
           <div>
@@ -189,32 +249,6 @@ export default function Home() {
           <div className="contact-card contact-form-card">
             <h3>Contact Me</h3>
             <ContactForm />
-          </div>
-        </div>
-      </section>
-
-      <section className="section resume-section" id="resume">
-        <div className="section-grid">
-          <div>
-            <h2>Resume / CV</h2>
-            <p>Download my detailed resume to learn more about my experience, education, and qualifications.</p>
-            <div className="resume-card">
-              <div className="resume-preview">
-                <div className="pdf-icon">📄</div>
-                <div className="resume-info">
-                  <h3>Ken Kipkoech Ngetich</h3>
-                  <p>Full-Stack Developer & Software Engineer</p>
-                </div>
-              </div>
-              <div className="resume-actions">
-                <a href="/Ken%20Kipkoech%20Ngetich%20(kenaki).pdf" download="Ken Kipkoech Ngetich (kenaki).pdf" className="btn btn-primary">
-                  Download CV
-                </a>
-                <a href="/Ken%20Kipkoech%20Ngetich%20(kenaki).pdf" target="_blank" rel="noreferrer" className="btn btn-secondary">
-                  View Online
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </section>
