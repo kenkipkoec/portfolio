@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import ContactForm from './components/ContactForm';
-import ThemeAndTopButton from './components/ThemeAndTopButton';
+import Header from './components/Header';
 
 const skills = [
   {
@@ -48,23 +48,7 @@ const projects = [
 export default function Home() {
   return (
     <main className="page-shell">
-      <header className="site-header">
-        <div className="nav-inner">
-          <Link href="#home" className="brand">
-            <Image src="/tab&icon.png" alt="Ngetich Ken logo" width={36} height={36} className="brand-logo" />
-            <span>Ngetich Ken</span>
-          </Link>
-          <nav className="nav-links">
-            <Link href="#about">About</Link>
-            <Link href="#skills">Skills</Link>
-            <Link href="#projects">Projects</Link>
-            <Link href="#architecture">Architecture</Link>
-            <Link href="#contact">Contact</Link>
-            <Link href="#resume">Resume</Link>
-          </nav>
-          <ThemeAndTopButton />
-        </div>
-      </header>
+      <Header />
 
       <section className="hero" id="home">
         <div className="hero-content">
